@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  .page-signup.container(ng-controller='signupCtrl' ng-init='init()')
+    p.title Sign Up
+    .form-ctnr
+      form(ng-submit='register()')
+        p EMAIL
+        input.form-control(type='text' ng-model='registerForm.username' required autofocus)
+        p PASSWORD
+        input.form-control(type='password' ng-model='registerForm.password' required)
+        .row
+          .col-xs-12
+            button.btn.btn-success.right(type='submit' ng-disabled='reqInProgress') SIGN UP
+        p.error {{registerError}}
