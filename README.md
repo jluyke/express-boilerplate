@@ -1,15 +1,14 @@
 Express Boilerplate
 ===================
 
-Included:
+A simple boilerplate for Node.js client.
 
 - Express
-- Passport & express-session
 - sqlite3
-- Sequelize (ORM)
+- Sequelize ORM
 - Jade & Less
 - Angular
-- Bootstrap css
+- Bootstrap
 
 Setup
 -----
